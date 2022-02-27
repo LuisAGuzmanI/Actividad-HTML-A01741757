@@ -1,5 +1,6 @@
 <template>
-  <div class="hello">
+  <div>
+    <!-- <Navbar/> -->
     <h1>{{ msg }}</h1>
     <p style="font-size:80%;">Luis Ángel Guzmán Iribe - A01741757</p>
     <hr>
@@ -73,7 +74,7 @@
       Para vincular una variable con un input, escribimos 'v-model:"incDec"', y ahora la variable está vinculada con los cambios que sufra la caja de input,<br>
       y se verán reflejados de manera automatica.
     </p>
-    <img src="../assets/ComponentTemplate.png" alt="Template">
+    <img src="../assets/img/ComponentTemplate.png" alt="Template">
     <h4>Script</h4>
     <p>El script es donde incorporamos la lógica de nuestro componente, aquí es donde damos el paso más allá de una página estatica.</p>
     <h5>Props</h5>
@@ -92,14 +93,14 @@
       Básicamente sumo o resto el valor en la variable 'incDec' a la variable 'counter' e igualo el resultado a 'counter'. <br>
       El '!isNaN(this.incDec)' es solo para asegurarme que no trate de sumar un string, porque alteraría el funcionamiento de la página. 
     </p>
-    <img src="../assets/ComponentScript.png" alt="Template">
+    <img src="../assets/img/ComponentScript.png" alt="Template">
     <h4>Style</h4>
     <p>
       No hay mucho que decir aquí, esto es para que el componente se vea lindo, aquí lo dejé simple, pero definitivamente se ve mejor que el html por defecto. <br>
       Estos estilos aplican a todos los subcomponentes del componente, si quieres se apliquen solo a este componente puedes poner la palabra reservada 'scoped' <br>
       dentro de la tag que abre los estilos: &lt;style scoped&gt; ... &lt;/style&gt;<br>
     </p>
-    <img src="../assets/ComponentStyle.png" alt="Template">
+    <img src="../assets/img/ComponentStyle.png" alt="Template">
     <p>Y eso es todo. Ahora puedes empezar a programar una aplicación sencilla con Vue.js</p> <br> <br>
 
     <p>Y aquí va una tabla con mis 5 numeros favoritos porque se me olvidó que la página tenía que llevar una tabla :p</p>
@@ -134,20 +135,17 @@
             </tr>
         </tbody>
     </table>
+    <br><br>
 
-    <footer class="text-muted py-5">
-        <div class="container">
-            <p class="float-end mb-1">
-                <a href="https://github.com/LuisAGuzmanI/Actividad1-HTML-A01741757">Webpage GitHub Repository</a>
-            </p>
-            <p>Esta pagina tomó mucho más tiempo de lo que debería. Si llegaron hasta acá abajo, espero que sea porque les gustó...</p>
-        </div>
+    <footer>
+      <p><a href="https://github.com/LuisAGuzmanI/Actividad1-HTML-A01741757">Webpage GitHub Repository</a></p>
     </footer>
   </div>
 </template>
 
 <script>
 import Counter from "./Counter.vue";
+// import Navbar from "./Navbar.vue";
 export default {
   name: "HelloWorld",
   components: {
@@ -195,5 +193,14 @@ table {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   margin-left: auto;
   margin-right: auto;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  color: white;
 }
 </style>

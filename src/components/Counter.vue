@@ -5,7 +5,7 @@
             Este es un componente, uno muy sencillo, pero servirá para que
             te des una idea basica de como funciona una componente de Vue. <br>
             Puedes alterar el número en el centro tocando los botones para
-            umar y restar, y modificar la cantidad en los botones introduciendo
+            sumar y restar, y modificar la cantidad en los botones introduciendo
             un número en la caja de abajo. 
         </p>
         <h3> {{ counter }} </h3>
