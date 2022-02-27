@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Inicio from "@/views/Inicio.vue";
-import Contacto from "@/views/Contacto.vue";
+import Wallpaper from "@/views/Wallpaper.vue";
 
 const routes = [
   {
@@ -9,9 +9,9 @@ const routes = [
     component: Inicio,
   },
   {
-    path: "/Contacto",
-    name: "Contacto",
-    component: Contacto,
+    path: "/wallpaper",
+    name: "Wallpaper",
+    component: Wallpaper,
   },
 ];
 
