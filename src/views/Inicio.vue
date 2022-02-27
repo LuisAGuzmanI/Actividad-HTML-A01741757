@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <Navbar/> -->
-    <h1>{{ msg }}</h1>
+    <h1> Mini Tutorial de Vue </h1>
     <p style="font-size:80%;">Luis Ángel Guzmán Iribe - A01741757</p>
     <hr>
 
@@ -136,18 +136,15 @@
         </tbody>
     </table>
     <br><br>
-
-    <footer>
-      <p><a href="https://github.com/LuisAGuzmanI/Actividad1-HTML-A01741757">Webpage GitHub Repository</a></p>
-    </footer>
   </div>
 </template>
 
 <script>
-import Counter from "./Counter.vue";
-// import Navbar from "./Navbar.vue";
+import Counter from "../components/Counter.vue";
+
+
 export default {
-  name: "HelloWorld",
+  name: "Inicio",
   components: {
     Counter,
   },
@@ -165,6 +162,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 h3 {
   margin: 40px 0 0;
 }
@@ -182,9 +180,6 @@ li {
   padding: 5px;
   margin: 0 10px;
 }
-a {
-  color: #42b983;
-}
 table {
   border-collapse: collapse;
   margin: 25px 0;
@@ -193,14 +188,5 @@ table {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   margin-left: auto;
   margin-right: auto;
-}
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  background-color: #333;
-  color: white;
 }
 </style>
