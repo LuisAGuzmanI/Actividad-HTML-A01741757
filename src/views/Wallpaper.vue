@@ -1,6 +1,6 @@
 <template>
   <div>
-      <h1>El Wallpaper de mi laptop, ¿Apoco no está padre?</h1>
+      <h1 class="display-5 fw-bold">El Wallpaper de mi laptop, ¿Apoco no está padre?</h1>
   </div>
 </template>
 

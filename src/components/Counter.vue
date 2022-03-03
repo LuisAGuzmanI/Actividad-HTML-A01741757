@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1> {{ title }} </h1>
-        <p>
+        <h1 class="display-5 fw-bold"> {{ title }} </h1>
+        <p class="lead mb-4">
             Este es un componente, uno muy sencillo, pero servirá para que
             te des una idea basica de como funciona una componente de Vue. <br>
             Puedes alterar el número en el centro tocando los botones para
@@ -9,12 +9,12 @@
             un número en la caja de abajo. 
         </p>
         <h3> {{ counter }} </h3>
-        <div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
             <button @click="decrease"> -{{ incDec }} </button>
             <button @click="increase"> +{{ incDec }} </button>
         </div>
         <form @submit.prevent="funcionVacia" style="margin-top: 15px;">
-            <label> 
+            <label class="lead mb-4"> 
                 Cambia la operación: 
                 <input type="number" v-model="incDec" placeholder="Ingresa un Numero"> 
             </label>
