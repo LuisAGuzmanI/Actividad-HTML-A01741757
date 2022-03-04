@@ -43,6 +43,14 @@
           <hr>
           <counter />
           <hr>
+          <h1 class="display-5 fw-bold"> Counter!... Vanilla! </h1>
+          <p class="lead mb-4">
+            Para esta actividad hice una recreación de este compomente con Vanilla JS y HTML. Como no puedo insertarlo dentro de esta página de Vue, te dejaré el código para verlo en la carpeta "CounterVanilla" del repositorio de esta página, solo bajalo y correlo en el navegador como un archivo html normal. <br>
+          </p>
+          <a href="">Puedes encontrarlo aquí</a>
+          <hr>
+
+
           <h3>¿Cómo funciona?</h3>
            <p class="lead mb-4">Ahora trataré de explicar cada uno de los elementos de este componente, para que se hagan una idea de como funciona.</p>
 

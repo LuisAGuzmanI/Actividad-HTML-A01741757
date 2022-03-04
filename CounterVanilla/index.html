@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Vanilla</title>
+</head>
+<body>
+
+    <h1 class="display-5 fw-bold"> Counter Vanilla! </h1>
+    <p class="lead mb-4">
+        Este es un componente, uno muy sencillo, pero servirá para que
+        te des una idea basica de como funciona una componente de Vue. <br>
+        Puedes alterar el número en el centro tocando los botones para
+        sumar y restar, y modificar la cantidad en los botones introduciendo
+        un número en la caja de abajo. 
+    </p>
+    <h3 id="counter"> 10 </h3>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button id="btnMenos"> -1 </button>
+        <button id="btnMas"> +1 </button>
+    </div>
+    <form style="margin-top: 15px;">
+        <label class="lead mb-4"> 
+            Cambia la operación: 
+            <input type="number" name="valor" placeholder="Ingresa un Numero"> 
+            <input type="submit" value="Confirmar">
+        </label>
+    </form>
+
+    <!-- <script src="./app.js"></script>
+    <script>
+        miModulo.nuevoJuego();
+    </script> -->
+    
+    <script>
+        const btnMenos = document.querySelector('#btnMenos'),
+              btnMas   = document.querySelector('#btnMas'),
+              counter  = document.querySelector('#counter'),
+              form     = document.querySelector('form'),
+              input    = document.querySelector("[name='valor']");
+        
+        let counterValor = 10;
+        
+        btnMenos.addEventListener('click', () => {
+
+            // alert(btnMenos.innerText);
+            counterValor += parseInt(btnMenos.innerText);
+            // alert(counterValor);
+            counter.innerHTML = counterValor;
+
+        });
+
+        btnMas.addEventListener('click', () => {
+
+        // alert(btnMenos.innerText);
+        counterValor += parseInt(btnMas.innerText);
+        // alert(counterValor);
+        counter.innerHTML = counterValor;
+
+        });
+
+        form.onsubmit = (event) => {
+            event.preventDefault();
+            btnMenos.innerHTML = '-' + parseInt(input.value)
+            btnMas.innerHTML   = '+' + parseInt(input.value)
+        }
+
+    </script>
+</body>
+</html>
