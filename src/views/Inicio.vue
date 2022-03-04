@@ -47,7 +47,7 @@
           <p class="lead mb-4">
             Para esta actividad hice una recreación de este compomente con Vanilla JS y HTML. Como no puedo insertarlo dentro de esta página de Vue, te dejaré el código para verlo en la carpeta "CounterVanilla" del repositorio de esta página, solo bajalo y correlo en el navegador como un archivo html normal. <br>
           </p>
-          <a href="">Puedes encontrarlo aquí</a>
+          <a href="https://github.com/LuisAGuzmanI/Actividad1-HTML-A01741757/tree/main/CounterVanilla">Puedes encontrarlo aquí</a>
           <hr>
 
 
